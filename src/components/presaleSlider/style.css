@@ -1,0 +1,17 @@
+    .presale-slider .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .presale-slider .swiper-slide {
+        position: relative;
+    }
+
+    .presale-slider .swiper-slide::after {
+        content: "";
+        width: 1.5px;
+        height: 70%;
+        position: absolute;
+        right: -10px;
+        top: 15%;
+        background-color: #5D606C;
+    }

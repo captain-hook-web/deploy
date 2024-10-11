@@ -1,0 +1,46 @@
+.parent-stage>div {
+    height: 100%;
+}
+
+[data-stage] {
+    padding: 35px 0;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+[data-stage="Stage 1"] {
+    background: url(/stage-1-bg.png);
+}
+
+[data-stage="Stage 2"] {
+    background: url(/stage-2-bg.png);
+}
+
+[data-stage="Stage 3"] {
+    background: url(/stage-3-bg.png);
+}
+
+[data-stage="Stage 4"] {
+    background: url(/stage-4-bg.png);
+}
+
+[data-stage="Stage 5"] {
+    background: url(/stage-5-bg.png);
+}
+
+[data-stage="DEX Launch"] {
+    background: url(/stage-6-bg.png);
+}
+
+@media (min-width: 1024px) {
+
+    [data-stage] {
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    [data-stage] {
+        padding: 25px 10px;
+    }
+}

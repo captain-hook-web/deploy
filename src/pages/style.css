@@ -1,0 +1,49 @@
+.css-19r6kue-MuiContainer-root {
+    padding: 0 !important;
+}
+
+@keyframes moveStripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 20px 0;
+    }
+}
+
+.MuiStack-root.css-jjb0dm-MuiStack-root,
+.MuiBox-root.css-1bt6ze4,
+.MuiBox-root.css-zc9jlk,
+.MuiBox-root.css-7kjkgq {
+    padding: 0 18px !important;
+}
+
+.css-jjb0dm-MuiStack-root {
+    gap: 12px !important;
+    margin-top: 12px !important;
+}
+
+.MuiTypography-root .MuiTypography-body2 .css-csi7ge-MuiTypography-root {
+    font-size: 16px !important;
+}
+
+@media (min-width: 1280px) {
+    .MuiBox-root.css-1rm7u2e {
+        transform: scale(.8) translateX(40px) translateY(50px);
+        -webkit-transform: scale(.8) translateX(40px) translateY(50px);
+        -moz-transform: scale(.8) translateX(40px) translateY(50px);
+        -ms-transform: scale(.8) translateX(40px) translateY(50px);
+        -o-transform: scale(.8) translateX(40px) translateY(50px);
+    }
+}
+
+@media (min-width: 1800px) {
+    .MuiBox-root.css-1rm7u2e {
+        transform: scale(1) translateX(0) translateY(120px);
+        -webkit-transform: scale(1) translateX(0) translateY(120px);
+        -moz-transform: scale(1) translateX(0) translateY(120px);
+        -ms-transform: scale(1) translateX(0) translateY(120px);
+        -o-transform: scale(1) translateX(0) translateY(120px);
+    }
+}

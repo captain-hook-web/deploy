@@ -1,0 +1,100 @@
+/* .rail-slider .swiper-wrapper .swiper-slide {
+    height: 200px;
+    background-image: url(/stick-background-slide.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+
+.rail {
+    content: "";
+    width: 100000%;
+    height: 30px;
+    background-image: url(/rail.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    animation: move-background 1000s linear infinite;
+    -webkit-animation: move-background 1000s linear infinite;
+}
+
+@keyframes move-background {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100000px);
+        -webkit-transform: translateX(-100000px);
+        -moz-transform: translateX(-100000px);
+        -ms-transform: translateX(-100000px);
+        -o-transform: translateX(-100000px);
+}
+}
+
+/* اضافه کردن حالت برگشت به انیمیشن */
+@keyframes move-background-back {
+    0% {
+        transform: translateX(-100000px);
+        -webkit-transform: translateX(-100000px);
+        -moz-transform: translateX(-100000px);
+        -ms-transform: translateX(-100000px);
+        -o-transform: translateX(-100000px);
+}
+
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate 1.5s linear infinite;
+    -webkit-animation: rotate 1.5s linear infinite;
+}
+
+@media (min-width: 640px) {
+    /* .rail-slider .swiper-wrapper .swiper-slide {
+        height: 240px;
+    } */
+}
+
+@media (min-width: 1024px) {
+    /* .rail-slider .swiper-wrapper .swiper-slide {
+        height: 200px;
+    } */
+}
+
+@media (min-width: 1280px) {
+    /* .rail-slider .swiper-wrapper .swiper-slide {
+        height: 250px;
+    } */
+}
+
+@media (min-width: 1536px) {
+    /* .rail-slider .swiper-wrapper .swiper-slide {
+        height: 300px;
+    } */
+}

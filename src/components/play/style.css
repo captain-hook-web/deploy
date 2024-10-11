@@ -1,0 +1,5 @@
+.video-frame {
+    border: 20px solid transparent;
+    /* padding: 15px; */
+    border-image: url(/video-frame.png) 18 round;
+}

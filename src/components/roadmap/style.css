@@ -1,0 +1,24 @@
+[data-phase] {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+[data-phase="Phase 1"] {
+    background-image: url(/roadmap-paper-1.png);
+}
+
+[data-phase="Phase 2"] {
+    background-image: url(/roadmap-paper-2.png);
+}
+
+[data-phase="Phase 3"] {
+    background-image: url(/roadmap-paper-3.png);
+}
+
+[data-phase="Phase 4"] {
+    background-image: url(/roadmap-paper-4.png);
+}
+
+[data-phase="Phase 5"] {
+    background-image: url(/roadmap-paper-5.png);
+}

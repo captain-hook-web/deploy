@@ -1,0 +1,14 @@
+.scrolled {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1000 !important;
+}
+
+.hamberger-menu {
+    transition: 1s !important;
+    -webkit-transition: 1s !important;
+    -moz-transition: 1s !important;
+    -ms-transition: 1s !important;
+    -o-transition: 1s !important;
+}

@@ -1,0 +1,28 @@
+[data-question] {
+    width: 100%;
+    max-width: 460px;
+    height: 80px;
+    padding-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+[data-question="1"] {
+    background-image: url(/stick-FAQ-1.png);
+}
+
+[data-question="2"] {
+    background-image: url(/stick-FAQ-2.png);
+}
+
+[data-question="3"] {
+    background-image: url(/stick-FAQ-3.png);
+}
+
+[data-question="4"] {
+    background-image: url(/stick-FAQ-4.png);
+}
+
+[data-question="5"] {
+    background-image: url(/stick-FAQ-5.png);
+}
