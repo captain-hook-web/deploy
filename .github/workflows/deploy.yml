@@ -12,21 +12,16 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
 
-    - name: Use Node.js 20
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
-      
-    - name: 🔨 Build Project
-      run: |
-        npm install
-        npm run build
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.GIT_CPANEL_REACT_SERVER }}
-        username: ${{ secrets.GIT_CPANEL_REACT_USER }}
-        password: ${{ secrets.GIT_CPANEL_REACT_PWD }}
-        protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL }}
-        local-dir: ./dist/
+      - name: Build project
+        run: |
+          # دستورات build پروژه شما مانند npm install و npm run build را در اینجا قرار دهید
+          npm install
+          npm run build
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./build/
